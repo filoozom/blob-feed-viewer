@@ -2,8 +2,10 @@
   import { getDefaultProvider, isAddress, AbiCoder } from "ethers";
   import { Gapless5 } from "@regosen/gapless-5";
   import { onMount } from "svelte";
+  import { BlobEIP4844Transaction } from "@ethereumjs/tx";
 
   import "@regosen/gapless-5/gapless5.css";
+  import Post from "./Post.svelte";
 
   const API = "https://rpc-gbc.chiadochain.net";
   const genesis = 1665396300;
@@ -167,3 +169,5 @@
 <div>
   <div id="player" />
 </div>
+
+<Post />
